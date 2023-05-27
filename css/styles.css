@@ -88,6 +88,12 @@
     margin-left: 2px;
     background-color: var(--primary-color);
   }
+
+  .users-actions{
+    background-color: var(--primary-color);
+    border:1px solid white;
+    width: 40px;
+  }
   .footer-img{
     position: absolute;
     width: 11%;
