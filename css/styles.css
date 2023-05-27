@@ -173,6 +173,8 @@
     width: 100%;
     transform: rotate(-0.0025turn);
     z-index: 2000;
+    border-bottom: 4px groove var(--primary-color);
+    border-top: 6px groove var(--primary-color);
 }
 
 /* Modals */
@@ -326,6 +328,7 @@ button:hover{
 
     footer{
         font-size: 11px;
+       
     }
 
     .club-card h1,h2,h3,h4,h5,h6 {
