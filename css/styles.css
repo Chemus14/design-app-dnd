@@ -202,7 +202,7 @@
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 300px;
+  width: 500px;
 }
 
 .close {
@@ -228,13 +228,38 @@
 }
 
 h1 {
+  color: var(--secondary-color);
   margin-bottom: 20px;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.2);
+  padding: 8px;
+  border-radius: 31px 5px 31px 3px;
+  animation: glowing-text 2s ease-in-out 3;
+}
+
+@keyframes glowing-text {
+  0% {
+    color: var(--primary-color);
+  }
+  25% {
+    color: var(--background-body);
+  }
+  50% {
+    color: var(--primary-color);
+  }
+  75% {
+    color: var(--background-body);
+  }
+  100% {
+    color: var(--secondary-color);
+  }
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 
 label {
@@ -242,9 +267,16 @@ label {
 }
 
 input {
-  padding: 5px;
+  width: 100%;
+  padding: 12px;
   margin-bottom: 10px;
   border-radius: 5px;
+  border: 2px solid var(--secondary-color);
+  transition: border 0.3s ease;
+}
+
+input:hover{
+  border: 2px solid var(--primary-color);
 }
 
 button {
@@ -254,8 +286,10 @@ button {
     padding: 10px;
     width: 100%;
     background-color: var(--background-btn);
-    color: white;
+    color: var(--secondary-color);
     transition: background-color 0.3s ease;
+    margin-top: 10px;
+    border: 2px solid var(--secondary-color);
 }
 
 button:hover{
