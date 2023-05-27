@@ -6,6 +6,10 @@
       rel="stylesheet"
       href="css/styles.css"
     />
+    <script
+      src="js/script.js"
+      defer
+    ></script>
   </head>
   <body>
     <header>
@@ -50,7 +54,7 @@
             >
             <a
               href="#"
-              target="_blank"
+              class="modal-link"
               >Login</a
             >
 
@@ -110,5 +114,38 @@
       />
       <p>&copy; 2023 Derechos de autor. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- modals login and sign up-->
+
+    <div
+      id="myModal"
+      class="modal"
+    >
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="login-container">
+          <h1>Sign In</h1>
+          <form class="login-form">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
