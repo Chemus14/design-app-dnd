@@ -130,7 +130,9 @@
   .club-card h1,h2,h3,h4,h5,h6 {
     font-family: "MedievalSharp", serif;
     color:  white;
-    margin-left: 15px
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: 900;
   }
 
   .club-card p {
@@ -139,6 +141,7 @@
     font-weight: 300;
     margin-left: 15px;
     width: 90%;
+    font-size: 19px;
   }
 
   .btn-card{
@@ -239,8 +242,21 @@
         font-size: 11px;
     }
 
-    h1 {
-      font-size: 16px;
+    .club-card h1,h2,h3,h4,h5,h6 {
+      font-family: "MedievalSharp", serif;
+      color:  white;
+      margin-left: 15px;
+      font-size: 25px;
+      font-weight: 900;
+    }
+  
+    .club-card p {
+      font-family: "MedievalSharp", serif;
+      color:  black;
+      font-weight: 300;
+      margin-left: 15px;
+      width: 90%;
+      font-size: 15px;
     }
 
     
@@ -308,5 +324,21 @@
         width: 15%;
         left: 0px;
         bottom: 10px;
+    }
+    .club-card h1,h2,h3,h4,h5,h6 {
+      font-family: "MedievalSharp", serif;
+      color:  white;
+      margin-left: 15px;
+      font-size: 25px;
+      font-weight: 900;
+    }
+  
+    .club-card p {
+      font-family: "MedievalSharp", serif;
+      color:  black;
+      font-weight: 300;
+      margin-left: 15px;
+      width: 90%;
+      font-size: 15px;
     }
   }
