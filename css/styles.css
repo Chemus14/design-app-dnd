@@ -5,6 +5,9 @@
     --background-btn: #000000;
     --bg-btn-hover: #f1b66c;
     --title-color: #ffffff;
+    --info-color: #4F92BA;
+    --warning-color: #FFD664;
+    --event-color: #5D65C5;
   }
 
   /* :root {
