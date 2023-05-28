@@ -4,6 +4,7 @@
     --background-body: linear-gradient(207deg, rgba(255,140,0,0.21612394957983194) 13%, rgba(251,229,199,0.9808298319327731) 71%, rgba(232,190,130,0.028448879551820738) 100%);
     --background-btn: #000000;
     --bg-btn-hover: #f1b66c;
+    --title-color: #ffffff;
   }
 
   /* :root {
@@ -28,12 +29,19 @@
     color: #fff;
     width: 100%;
   }
-  
+  .nav-container{
+    max-width: 1200px;
+    display: block;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
   .container {
     max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+    display: block;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px var(--primary-color);
+    padding: 0 8x;
     margin: 0 auto;
   }
   
@@ -110,19 +118,18 @@
 
   
   
-  section {
-    display: flex;
-    flex-direction: column;
+  .row {
     position: relative;
     z-index: 1000;
     padding: 10px;
     top: -18px;
   }
+  .club-list{
+    margin-top: 0px;
+    margin-bottom: 13px;
+  }
   .club-card{
-    background-color: var(--secondary-color);
-    margin-top: 15px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 7px var(--primary-color);
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,12 +247,24 @@
   align-items: center;
 }
 
-h1 {
+.login-container h1 {
   color: var(--secondary-color);
   margin-bottom: 20px;
   text-transform: uppercase;
   background-color: rgba(0,0,0,0.2);
   padding: 8px;
+  margin-right: 12px;
+  border-radius: 31px 5px 31px 3px;
+  animation: glowing-text 2s ease-in-out 3;
+}
+
+.signup-container h1 {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.2);
+  padding: 8px;
+  margin-right: 12px;
   border-radius: 31px 5px 31px 3px;
   animation: glowing-text 2s ease-in-out 3;
 }
