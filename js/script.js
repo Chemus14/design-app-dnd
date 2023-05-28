@@ -21,3 +21,27 @@ window.addEventListener('click', (event) => {
     modal.style.display = 'none';
   }
 });
+
+// Modal sign up
+
+const modalSignUp = document.getElementById('myModalSignUp');
+const signUpLink = document.querySelector('.fa-user-plus');
+const closeBtnSignUp = modalSignUp.querySelector('.close');
+
+// Open the modal when the sign up link is clicked
+signUpLink.addEventListener('click', (event) => {
+  event.preventDefault();
+  modalSignUp.style.display = 'block';
+});
+
+// Close the modal when the close button is clicked
+closeBtnSignUp.addEventListener('click', () => {
+  modalSignUp.style.display = 'none';
+});
+
+// Close the modal when the user clicks outside of it
+window.addEventListener('click', (event) => {
+  if (event.target === modalSignUp) {
+    modalSignUp.style.display = 'none';
+  }
+});

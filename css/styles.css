@@ -94,6 +94,12 @@
     border:1px solid white;
     width: 40px;
   }
+  .users-actions i{
+    transition: color 0.3s ease;
+  }
+  .users-actions i:hover{
+    color: var(--secondary-color);
+  }
   .footer-img{
     position: absolute;
     width: 11%;
@@ -203,6 +209,7 @@
   padding: 20px;
   border: 1px solid #888;
   width: 500px;
+  border-radius: 4px;
 }
 
 .close {
@@ -222,6 +229,12 @@
 /* Form */
 
 .login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -262,6 +275,13 @@ h1 {
   width: 100%;
 }
 
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
 label {
   margin-bottom: 10px;
 }
@@ -272,7 +292,7 @@ input {
   margin-bottom: 10px;
   border-radius: 5px;
   border: 2px solid var(--secondary-color);
-  transition: border 0.3s ease;
+  transition: border 0.9s ease;
 }
 
 input:hover{
@@ -287,7 +307,7 @@ button {
     width: 100%;
     background-color: var(--background-btn);
     color: var(--secondary-color);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.7s ease;
     margin-top: 10px;
     border: 2px solid var(--secondary-color);
 }
@@ -386,6 +406,16 @@ button:hover{
       margin-left: 15px;
       width: 90%;
       font-size: 15px;
+    }
+
+    .modal-content {
+      background:var(--background-body);
+      margin: 0 50%;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      border-radius: 4px;
+      height: 60%;
     }
 
     
