@@ -19,6 +19,10 @@
       src="js/script.js"
       defer
     ></script>
+    <script
+      src="js/members.js"
+      defer
+    ></script>
   </head>
   <body>
     <header>
@@ -120,7 +124,7 @@
     <section class="notifications">
       <div class="row">
         <div class="container">
-          <div class="club-card">
+          <div class="content-club">
             <div class="alert">
               <h1>Alerts from the club</h1>
               <div class="announcement">
@@ -128,13 +132,13 @@
                 <span class="text"
                   >Important Announcement: Lorem ipsum dolor sit amet.</span
                 >
-                <i class="fas fa-window-close"></i>
+                <i class="fas fa-window-close icon-close"></i>
               </div>
 
               <div class="event">
                 <i class="fas fa-calendar-alt"></i>
                 <span class="text">New Event: Lorem ipsum dolor sit amet.</span>
-                <i class="fas fa-window-close"></i>
+                <i class="fas fa-window-close icon-close"></i>
               </div>
 
               <div class="information">
@@ -142,7 +146,25 @@
                 <span class="text"
                   >Information: Lorem ipsum dolor sit amet.</span
                 >
-                <i class="fas fa-window-close"></i>
+                <i class="fas fa-window-close icon-close"></i>
+              </div>
+            </div>
+            <div class="members-list">
+              <div class="member-card">
+                <h2>Members</h2>
+                <div class="member-list">
+                  <div class="members-container">
+                    <!-- Members will be dynamically added here -->
+                  </div>
+                  <div class="arrows">
+                    <span class="arrow-left"
+                      ><i class="fas fa-arrow-circle-left"></i
+                    ></span>
+                    <span class="arrow-right"
+                      ><i class="fas fa-arrow-circle-right"></i
+                    ></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

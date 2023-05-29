@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.content-club{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
 .club-profile h1 {
     color: var(--title-color);
     margin-bottom: 20px;
@@ -59,7 +65,7 @@
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
-    width: 80%;
+    width: 75%;
   }
   .alert h1 {
     color: var(--title-color);
@@ -75,11 +81,12 @@
   }
   
   .alert > div{
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     width: 100%;
-    font-size: 35px;
+    font-size: 22px;
     animation: display-from-right 2s ease-in-out;
   }
   @keyframes display-from-right {
@@ -99,6 +106,13 @@
     padding: 10px;
     border: 4px dotted #ffffff;
   }
+  .icon-close{
+    position:absolute;
+    border: 0px !important;
+    right: -48px;
+    top: -10px;
+    font-size: 19px !important;
+  }
   
   .announcement {
     background-color: var(--warning-color);
@@ -114,4 +128,157 @@
     background-color: var(--info-color);
     color: #fff;
   }
+
+  /* Members */
+  .members-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 30%;
+  }
+  .member-card {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+  }
   
+  .member-card::before,
+  .member-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    pointer-events: none;
+  }
+  
+  .member-card::before {
+    top: 0px;
+    left: 0px;
+    border: 3px solid #ff8c00;
+    animation: gradientAnimation 10s infinite;
+  }
+  
+  .member-card::after {
+    bottom: 0px;
+    right: 0px;
+    border: 3px solid #ff8c00;
+    animation: gradientAnimationReverse 10s infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to right, #ff8c00, #5D65C5, #FFD664);
+    }
+    33% {
+      border-image-slice: 2;
+      border-image-source: linear-gradient(to left, #ff8c00, #5D65C5, #FFD664);
+    }
+    66% {
+      border-image-slice: 3;
+      border-image-source: linear-gradient(to right, #ff8c00, #5D65C5, #FFD664);
+    }
+    100% {
+      border-image-slice: 4;
+      border-image-source: linear-gradient(to left, #ff8c00, #5D65C5, #FFD664);
+    }
+  }
+  
+  @keyframes gradientAnimationReverse {
+    0% {
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to left, #FFD664, #5D65C5, #ff8c00);
+    }
+    33% {
+      border-image-slice: 2;
+      border-image-source: linear-gradient(to right, #FFD664, #5D65C5, #ff8c00);
+    }
+    66% {
+      border-image-slice: 3;
+      border-image-source: linear-gradient(to left, #FFD664, #5D65C5, #ff8c00);
+    }
+    100% {
+      border-image-slice: 4;
+      border-image-source: linear-gradient(to right, #FFD664, #5D65C5, #ff8c00);
+    }
+  }
+  
+  .member-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .members-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .member {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .member img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .arrows {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    cursor: pointer;
+  }
+  
+  .arrow-left:hover,
+  .arrow-right:hover {
+    color: blue;
+  }
+  
+  
+  @media (max-width:768px) {
+    .content-club{
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .members-list {
+      display: flex;
+      flex-direction:column;
+      align-self: center;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    .alert {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .alert > div{
+      font-size: 18px;
+    }
+  }
